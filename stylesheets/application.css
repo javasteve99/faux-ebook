@@ -114,9 +114,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 p {
-  margin: 0 0 9px;
-  font-size: 13px;
-  line-height: 18px; }
+  margin: 0 0 26px 0;
+  font-size: 16px;
+  line-height: 26px; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -126,18 +126,18 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-  line-height: 36px; }
+  line-height: 52px; }
 
 h2 {
   font-size: 24px;
-  line-height: 36px; }
+  line-height: 52px; }
 
 h3 {
-  line-height: 27px;
+  line-height: 39px;
   font-size: 18px; }
 
 h4, h5, h6 {
-  line-height: 18px; }
+  line-height: 26px; }
 
 h4 {
   font-size: 14px; }
@@ -152,7 +152,7 @@ h6 {
 
 ul, ol {
   padding: 0;
-  margin: 0 0 9px 25px; }
+  margin: 0 0 13px 25px; }
 
 ul ul,
 ul ol,
@@ -167,7 +167,7 @@ ol {
   list-style: decimal; }
 
 li {
-  line-height: 18px; }
+  line-height: 26px; }
 
 ul.unstyled,
 ol.unstyled {
@@ -175,20 +175,20 @@ ol.unstyled {
   list-style: none; }
 
 dl {
-  margin-bottom: 18px; }
+  margin-bottom: 26px; }
 
 dt,
 dd {
-  line-height: 18px; }
+  line-height: 26px; }
 
 dt {
   font-weight: bold; }
 
 dd {
-  margin-left: 9px; }
+  margin-left: 13px; }
 
 hr {
-  margin: 18px 0;
+  margin: 26px 0;
   border: 0;
   border-top: 1px solid #555555;
   border-bottom: 1px solid white; }
@@ -205,13 +205,13 @@ abbr {
 
 blockquote {
   padding: 0 0 0 15px;
-  margin: 0 0 18px;
+  margin: 0 0 26px;
   border-left: 5px solid #eeeeee; }
   blockquote p {
     margin-bottom: 0; }
   blockquote small {
     display: block;
-    line-height: 18px;
+    line-height: 26px;
     color: #999999; }
     blockquote small:before {
       content: '\2014 \00A0'; }
@@ -266,9 +266,9 @@ nav {
     zoom: 1;
     *display: inline;
     *vertical-align: auto;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: normal;
-    line-height: 18px;
+    line-height: 26px;
     padding: 4px 10px;
     text-align: center;
     text-decoration: none;
@@ -296,9 +296,10 @@ nav {
     vertical-align: middle;
     display: block;
     float: left;
-    height: 30px;
-    margin-top: 10px;
-    width: 46px; }
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    margin-top: 10px; }
     nav a.reveal-contents:hover {
       background-color: #555555;
       background-position: 0 -15px;
@@ -316,7 +317,7 @@ nav {
     float: right;
     line-height: 60px; }
 
-div.text-wrap {
+div.container {
   background: white;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -330,5 +331,5 @@ div.text-wrap {
   margin: 60px 20px 20px 20px;
   overflow-y: scroll;
   padding: 20px; }
-  div.text-wrap::-webkit-scrollbar {
+  div.container::-webkit-scrollbar {
     visibility: hidden; }
