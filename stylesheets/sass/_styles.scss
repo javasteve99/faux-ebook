@@ -2,3 +2,45 @@
 Styles
 ========================================================================== */
 
+body {
+  @include background-image(linear-gradient(bottom, tint($black, 20%) 0%, tint($black, 10%) 100%));
+}
+
+nav {
+  @include clearfix;
+  height: 60px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+  a.reveal-contents {
+    @include bootstrap-button($gray, $white);
+    display: block;
+    float: left;
+    height: 30px;
+    margin-top: 10px;
+    width: 46px;
+  }
+
+  h1 {
+    color: $white;
+    float: right;
+    line-height: 60px;
+  }
+}
+
+div.text-wrap {
+  background: $white;
+  @include border-radius(4px);
+  @include box-shadow(0 3px 6px rgba($black, 0.5));
+  height: 750px; // fix with percentage later
+  margin: 60px 20px 20px 20px;
+  overflow-y: scroll;
+  padding: 20px;
+
+  &::-webkit-scrollbar {
+    visibility: hidden;
+  }
+}
