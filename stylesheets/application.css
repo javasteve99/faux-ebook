@@ -317,6 +317,21 @@ nav {
     float: right;
     line-height: 60px; }
 
+section.table-of-contents {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 13px;
+  margin-bottom: 26px; }
+  section.table-of-contents a {
+    color: #0064cd; }
+  section.table-of-contents a:hover {
+    color: #003f81; }
+  section.table-of-contents ul {
+    list-style-type: none;
+    margin-left: 0; }
+  section.table-of-contents li {
+    height: 30px;
+    line-height: 30px; }
+
 div.container {
   background: white;
   -webkit-border-radius: 4px;

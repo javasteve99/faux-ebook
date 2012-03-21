@@ -32,6 +32,27 @@ nav {
   }
 }
 
+section.table-of-contents {
+  border-bottom: 1px solid $grayLight;
+  padding-bottom: $lineHeight/2;
+  margin-bottom: $lineHeight;
+
+  a {
+    color: $blueDark;
+  }
+  a:hover {
+    color: darken($blueDark, 15%);
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  li {
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
 div.container {
   background: $white;
   @include border-radius(4px);
