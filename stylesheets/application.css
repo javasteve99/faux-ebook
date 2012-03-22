@@ -229,8 +229,8 @@ body {
 nav {
   zoom: 1;
   height: 60px;
+  overflow: visible;
   padding: 0 20px;
-  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px; }
@@ -398,7 +398,7 @@ div.container {
   -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
   height: 750px;
-  margin: 60px 20px 20px 20px;
+  margin: 0 20px 20px 20px;
   overflow-y: scroll;
   padding: 20px;
   position: relative; }
