@@ -18,7 +18,7 @@ nav {
   a.reveal-contents {
     @include bootstrap-button($gray, $white);
     display: block;
-    float: left;
+    float: right;
     font-size: 14px;
     height: 28px;
     line-height: 28px;
@@ -27,12 +27,12 @@ nav {
 
   h1 {
     color: $white;
-    float: right;
+    float: left;
     line-height: 60px;
   }
 }
 
-section.table-of-contents {
+section.toc-no-js {
   border-bottom: 1px solid $grayLight;
   padding-bottom: $lineHeight/2;
   margin-bottom: $lineHeight;
@@ -53,6 +53,50 @@ section.table-of-contents {
   }
 }
 
+section.toc-js {
+  background: $white;
+  border: 1px solid $black;
+  @include border-radius(4px);
+  @include box-shadow(0 3px 6px rgba($black, 0.5));
+  display: none;
+  padding: 16px 60px 10px 20px;
+  position: absolute;
+  top: 65px;
+  right: 26px;
+  z-index: 500;
+
+  &::after {
+    content: "";
+    background: $white;
+    border-left: 1px solid $black;
+    border-top: 1px solid $black;
+    display: block;
+    height: 16px;
+    right: 16px;
+    position: absolute;
+    top: -9px;
+    @include transform(rotate(45deg));
+    @include transform-origin(center center);
+    width: 16px;
+  }
+
+  a {
+    color: $blueDark;
+  }
+  a:hover {
+    color: darken($blueDark, 15%);
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+
+  li {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
 div.container {
   background: $white;
   @include border-radius(4px);
@@ -61,6 +105,7 @@ div.container {
   margin: 60px 20px 20px 20px;
   overflow-y: scroll;
   padding: 20px;
+  position: relative;
 
   &::-webkit-scrollbar {
     visibility: hidden;

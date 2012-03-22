@@ -7,4 +7,15 @@ $(document).ready(function(){
     });
   });
 
+  $('section.toc-no-js').hide();
+
+  $('a.reveal-contents').toggle(
+    function () {
+      $('section.toc-js').fadeIn();
+    },
+    function () {
+      $('section.toc-js').fadeOut();
+    }
+  );
+
 });
